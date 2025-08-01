@@ -6,25 +6,61 @@
   <title>Encuestas Pagadas</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #1a73e8, #8e44ad, #3498db, #e74c3c);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
     .intro-box {
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
+
     .intro-box h1 {
-      font-size: 26px;
+      font-size: 32px;
       margin-bottom: 20px;
     }
+
+    .intro-box p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
     .intro-box a button {
-      background-color: #1a73e8;
-      color: white;
+      background-color: #fff;
+      color: #1a73e8;
       padding: 12px 24px;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: bold;
+      font-size: 16px;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
+
     .intro-box a button:hover {
-      background-color: #0f66d0;
+      background-color: #1a73e8;
+      color: white;
     }
   </style>
 </head>
@@ -32,7 +68,7 @@
   <div class="container">
     <div class="intro-box">
       <h1>Encuestas Pagadas</h1>
-      <p>Participa en encuestas y gana recompensas</p>
+      <p>Participa en encuestas y gana recompensas reales</p>
       <a href="login.html"><button>Iniciar sesión</button></a>
     </div>
   </div>

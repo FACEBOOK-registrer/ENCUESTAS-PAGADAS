@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Encuesta de satisfacción</h2>
+      <form action="gracias.html" method="POST">
+        <p>¿Qué tan satisfecho estás con esta experiencia?</p>
+        <select name="satisfaccion" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Muy satisfecho">Muy satisfecho</option>
+          <option value="Satisfecho">Satisfecho</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Insatisfecho">Insatisfecho</option>
+        </select>
+        <br><br>
+        <p>¿Qué mejorarías?</p>
+        <textarea name="mejoras" rows="4" placeholder="Escribe tus sugerencias..."></textarea>
+        <br><br>
+        <button type="submit">Enviar encuesta</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
